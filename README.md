@@ -18,17 +18,31 @@ _A mood board is a collage or composition of images, visuals and other objects, 
 
 ## Branding and concepts
 
-![Capture](_readme-img/brand-01.png)
+<p align="center">
+   <img src="_readme-img/brand-01.png" alt="Capture"/>
+</p>
 
-![Capture](_readme-img/brand-02.png)
+<p align="center">
+   <img src="_readme-img/brand-02.png" alt="Capture"/>
+</p>
 
-![Capture](_readme-img/brand-03.png)
+<p align="center">
+   <img src="_readme-img/brand-03.png" alt="Capture"/>
+</p>
 
 ![Capture](_readme-img/logo-vroid.png)
 
-![Capture](_readme-img/logo-print.png)
+<p align="center">
+   <img src="_readme-img/logo-print.png" alt="Capture"/>
+</p>
 
-![Capture](_readme-img/logo2-print.png)
+<p align="center">
+   <img src="_readme-img/logo2-print.png" alt="Capture"/>
+</p>
+
+<p align="center">
+   <img src="_readme-img/concept.png" alt="Capture"/>
+</p>
 
 ## Wireframes
 
