@@ -16,6 +16,20 @@ _A mood board is a collage or composition of images, visuals and other objects, 
 
 ![Capture](_readme-img/moodboard-02.png)
 
+## Branding and concepts
+
+![Capture](_readme-img/brand-01.png)
+
+![Capture](_readme-img/brand-02.png)
+
+![Capture](_readme-img/brand-03.png)
+
+![Capture](_readme-img/logo-vroid.png)
+
+![Capture](_readme-img/logo-print.png)
+
+![Capture](_readme-img/logo2-print.png)
+
 ## Wireframes
 
 _A wireframe is a two-dimensional illustration of a page's interface that specifically focuses on space allocation and prioritization of content, functionalities available, and intended behaviors._
