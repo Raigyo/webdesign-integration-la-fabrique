@@ -64,6 +64,7 @@
   background-color: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.3);
   cursor: not-allowed;
+  display: none;
 }
 
 .carousel-wrapper .carousel-arrow[disabled]:hover,
@@ -101,19 +102,22 @@
 }
 
 .carousel-dots .dots:hover {
-  background-color: #fff;
+  border: 1px solid #cb7b93;
+  background-color: #f9edf4;
 }
 
 .carousel-dots .dots {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 10px;
   border: 1px solid #fff;
+  background-color: #f9edf4;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .carousel-dots .dots[data-active-dot] {
-  background-color: #0166fe;
+  border: 1px solid #cb7b93;
+  background-color: #cb7b93;
 }
 
 @media only screen and (min-width: 600px) {

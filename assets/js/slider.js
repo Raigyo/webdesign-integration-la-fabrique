@@ -6,10 +6,10 @@ const slideNumber = document.querySelector("[js-slide-number-text]");
 let slideIndex = 0;
 
 // add current slide number on the top
-// function addCurrentSlideNumber(slide, numberText) {
-//   const lengthOfSlide = slide.length;
-//   numberText.textContent = `${slideIndex + 1} / ${lengthOfSlide}`;
-// }
+function addCurrentSlideNumber(slide, numberText) {
+  const lengthOfSlide = slide.length;
+  numberText.textContent = `${slideIndex + 1} / ${lengthOfSlide}`;
+}
 
 // function to add active slide attribute
 function activateSlide(slides) {
@@ -42,19 +42,22 @@ function disableArrows(slides, nextBtn, prevBtn) {
 // helper function to hide or show slides
 function showslides(carouselWrapper, dots) {
   const slides = carouselWrapper.querySelectorAll("[js-carousel-item]");
+  console.log("slides", slideIndex);
 
   // Below commented code need to added only if we no need to disabled arrow once they reached to end
-  if (slideIndex > slides.length - 1) slideIndex = 0;
-  if (slideIndex < 0) slideIndex = slides.length - 1;
+  // if (slideIndex > slides.length - 1) slideIndex = 0;
+  // if (slideIndex < 0) slideIndex = slides.length - 1;
 
   // Below code need to added only if we need to disable the arrows once they reached to end
-  // const nextBtn = carouselWrapper.querySelector(".next");
-  // const prevBtn = carouselWrapper.querySelector(".prev");
-  // disableArrows(slides, nextBtn, prevBtn);
+  const nextBtn = carouselWrapper.querySelector(".next");
+  const prevBtn = carouselWrapper.querySelector(".prev");
+  if (slideIndex > slides.length - 1) slideIndex = slides.length;
+  if (slideIndex < 0) slideIndex = 0;
+  disableArrows(slides, nextBtn, prevBtn);
 
   activateSlide(slides);
   activateDots(dots);
-  // addCurrentSlideNumber(slides, slideNumber);
+  addCurrentSlideNumber(slides, slideNumber);
 }
 
 // function to navigate next or prev slide
