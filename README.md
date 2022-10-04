@@ -77,3 +77,7 @@ _A wireframe is a two-dimensional illustration of a page's interface that specif
 ### Charter for front-end developer
 
 ![Capture](_readme-img/figma-styles.png)
+
+## Useful links
+
+-[Simple parallax](https://codepen.io/Rueb/pen/rZbZgj)

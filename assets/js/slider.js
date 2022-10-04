@@ -1,7 +1,7 @@
 const carousel = document.querySelector("[js-carousel-wrapper]");
 const arrows = document.querySelectorAll("[data-carousel-arrows]");
 const carouselDots = document.querySelectorAll("[js-data-dots]");
-const slideNumber = document.querySelector("[js-slide-number-text]");
+// const slideNumber = document.querySelector("[js-slide-number-text]");
 
 let slideIndex = 0;
 
@@ -57,7 +57,7 @@ function showslides(carouselWrapper, dots) {
 
   activateSlide(slides);
   activateDots(dots);
-  addCurrentSlideNumber(slides, slideNumber);
+  // addCurrentSlideNumber(slides, slideNumber);
 }
 
 // function to navigate next or prev slide

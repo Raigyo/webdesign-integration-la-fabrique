@@ -3,6 +3,7 @@
 html {
   box-sizing: border-box;
   font-size: 1rem;
+  height: 500vh;
 }
 
 *,
@@ -47,6 +48,10 @@ img {
 }
 
 /* GENERAL */
+
+html {
+  scroll-behavior: smooth;
+}
 
 p {
   font-family: "Quando", "Arial", sans-serif;
@@ -151,11 +156,14 @@ h5 {
 }
 
 #header .social {
-  grid-column: 9 / 12;
+  grid-column: 10 / 12;
   display: flex;
   /* gap: 10px; */
   align-items: center;
   justify-content: center;
+}
+#header .social li {
+  padding: 0 5px;
 }
 
 #header .social img {
@@ -196,6 +204,11 @@ h5 {
   color: #f9edf4;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 0 10px;
+}
+
+#nav ul li a:hover {
+  color: #f485a7;
 }
 
 /* HOME */
@@ -232,6 +245,16 @@ h5 {
 
 .caption h2 {
   margin-bottom: 25px;
+}
+
+/* QUOTES */
+
+.parallax-1 {
+  padding: 0;
+  height: 320px;
+  background-image: url("../img/quotes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* NEWS */
@@ -365,6 +388,7 @@ h5 {
 
 #workshop {
   background-color: #f9edf4;
+  /* position: relative; */
 }
 
 #workshop .cards {
@@ -393,4 +417,31 @@ h5 {
   width: 100%;
   height: 382px;
   object-fit: cover;
+}
+
+.parallax-2 {
+  padding: 0;
+  height: 320px;
+  background-image: url("../img/parallax-02.jpg");
+}
+
+#workshop .more {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  /* position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 75%; */
+}
+
+#workshop button {
+  background-color: #5c4f49;
+  color: #edebea;
+  font-family: "Quando", "Arial", sans-serif;
+  font-size: 1.5em;
+  padding: 30px;
+  border-radius: 10px;
 }
