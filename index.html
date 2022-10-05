@@ -16,7 +16,8 @@
 <body>
   <div class="wrapper">
     <section id="header">
-      <img class="logo" src="assets/img/logo-la-fabrique-small.png" alt="Logo La fabrique">
+      <h1><img class="logo" src="assets/img/logo-la-fabrique-small.png" alt="La fabrique: Boulangerie - Pâtisserie">
+      </h1>
       <ul class="adress">
         <li>Rue de l’Aérodrome 18, 4140 Dolembreux - Tel : 04 384 72 77</li>
       </ul>
@@ -30,6 +31,8 @@
     <nav id="nav">
       <ul class="nav-links">
         <li><a href="#home">Accueil</a></li>
+        <li><a href="#slider">Nos atouts</a></li>
+        <li><a href="#news">Actualités</a></li>
         <li><a href="#about">À propos</a></li>
         <li><a href="#workshop">L'atelier</a></li>
         <li><a href="#menu">Le menu</a></li>
@@ -40,7 +43,12 @@
       <img src="assets/img/logo-la-fabrique-big.png" alt="Accueil">
     </section>
     <section id="slider">
+
       <div class="carousel-wrapper" js-carousel-wrapper>
+        <div class="title-slider">
+          <h2><span class="back-h2">Nos atouts</span></h2>
+        </div>
+
         <div class="carousel-item" js-carousel-item data-active-slide>
           <a href="#0">
             <img src="assets/img/slide-01.jpg" alt="Slide 1" />
@@ -93,11 +101,13 @@
       </div>
     </section>
     <section class="para parallax-1" id="quotes">
-      <q>“ Un repas équilibré, du point de vue d’un petit garçon, c’est une part de gâteau dans chaque main.”</q>
-      <q>Georges Plain</q>
+      <div class="quotes">
+        <q>“ Un repas équilibré, du point de vue d’un petit garçon, c’est une part de gâteau dans chaque main.”</q>
+        <q>Georges Plain</q>
+      </div>
     </section>
     <section id="news">
-      <h3>Suivez notre actualité</h3>
+      <h2>Suivez notre actualité</h2>
       <div class="cards">
         <article class="card">
           <a href="#">
@@ -159,7 +169,9 @@
     </section>
     <section id="about">
       <article class="content">
-        <h2>À propos</h2>
+
+        <h2><span class="back-h2"> À propos</span></h2>
+
         <img src="assets/img/about.jpg" alt="">
         <div class="text">
           <p>
@@ -199,17 +211,20 @@
 
     </section>
     <section id="workshop">
-      <h2>L’atelier de la Fabrique</h2>
-      <p>L’Atelier de la Fabrique est un vaste espace dédié à la boulangerie et la pâtisserie traditionnelle situé à
-        Paris et
-        mêlant fabrication, point de vente et lieu de consommation.
-      </p>
-      <p>L’Atelier Bon et Sain propose des produits artisanaux faits avec passion dans le respect des traditions, et
-        réalisés
-        directement
-        sous vos yeux. Toutes nos recettes sont élaborées afn de vous offrir des plats sains et gourmands tout en
-        privilégiant
-        des produits locaux et de saisons.</p>
+      <h2>Atelier</h2>
+      <h3>L’atelier de la Fabrique</h3>
+      <div class="section-intro">
+        <p>L’Atelier de la Fabrique est un vaste espace dédié à la boulangerie et la pâtisserie traditionnelle situé à
+          Paris et
+          mêlant fabrication, point de vente et lieu de consommation.
+        </p>
+        <p>L’Atelier Bon et Sain propose des produits artisanaux faits avec passion dans le respect des traditions, et
+          réalisés
+          directement
+          sous vos yeux. Toutes nos recettes sont élaborées afn de vous offrir des plats sains et gourmands tout en
+          privilégiant
+          des produits locaux et de saisons.</p>
+      </div>
       <div class="cards">
         <article class="card">
           <img src="assets/img/workshop-01.jpg" alt="">
@@ -236,16 +251,24 @@
       <div class="para parallax-2"></div>
       <div class="cards">
         <article class="card">
-          <h4>Boulangerie</h4>
+          <h3>Anniversaires</h3>
           <img src="assets/img/workshop-05.jpg" alt="">
           <p>L'Atelier de la fabrique propose un large assortiment de pains, baguettes, miches, etc.</p>
         </article>
         <article class="card">
-          <h4>Anniversaires</h4>
-          <p>L'Atelier de la fabrique propose un large assortiment de pains, baguettes, miches, etc.</p>
+          <h3>Horaires</h3>
+          <ul>
+            <li>Lundi : 06:00-18:00</li>
+            <li>Mardi : 06:00-18:00</li>
+            <li>Mercredi : 06:00-18:00</li>
+            <li>Jeudi : 06:00-18:00</li>
+            <li>Vendredi : 06:00-18:00</li>
+            <li>Samedi : 06:30-18:00</li>
+            <li>Dimanche : 07:00-17:00</li>
+          </ul>
         </article>
         <article class="card">
-          <h4>Événements</h4>
+          <h3>Événements</h3>
           <img src="assets/img/workshop-06.jpg" alt="">
           <p>Vous recherchez un traiteur pour assurer votre événement, que ce soit pour une réception privée ou pour une
             réception d’entreprise? L’Atelier de La fabrique vous propose ses paniers surprises!
@@ -255,9 +278,49 @@
       <div class="more">
         <button>Contactez-nous !</button>
       </div>
+      <div class="para parallax-3"></div>
     </section>
 
-    <section id="menu">menu</section>
+    <section id="menu">
+      <h2>Le menu</h2>
+      <h3>Nos créations sucrées ou salées</h3>
+      <div class="section-intro">
+        <p>Nous vous proposons ici un petit aperçu de notre assortiment journalier. Vous retrouverez dans nos boutiques
+          les
+          classiques de la pâtisserie Belge et Française ainsi que de nombreuses créations et recettes du moment.
+        </p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <img src="assets/img/menu-01.jpg" alt="">
+          <h4>Nos pains</h4>
+          <p>Dans notre rayon pains, vous trouverez à la fois les pains blancs classiques, multi-céréales, à l’ancienne,
+            au grain
+            mais aussi baguettes, pistolets, ciabatta... Nous prenons aussi vos commandes pour vos événements !</p>
+        </article>
+        <article class="card">
+          <img src="assets/img/menu-02.jpg" alt="">
+          <h4>Viennoiseries</h4>
+          <p>Nous sommes fiers de vous écrire ceci : toutes nos viennoiseries sont réalisées maison, de la pâte à la
+            cuisson. Nous utilisons du beurre pour notre pâte feuilletée et du bon chocolat. C’est un gage de qualité,
+            de moelleux, de
+            croustillant, de goût.. Bref, ça se goûte ! Pains au chocolat, pains au chocolat nappés, croissants,
+            couques, suisse raisin, huit à la
+            crème…</p>
+        </article>
+        <article class="card">
+          <img src="assets/img/menu-03.jpg" alt="">
+          <h4>Craquelins & Brioches</h4>
+          <p>Voilà l’ami du petit déjeuner ou… de tout instant gourmand de la journée. Sa douceur vous emballera.
+            Craquelin,
+            cramique, brioche... Mmmhh il vous régalera !</p>
+        </article>
+      </div>
+      <div class="more">
+        <button>Notre atelier !</button>
+      </div>
+      <div class="para parallax-4"></div>
+    </section>
     <section id="contact">contact</section>
     <section id="footer">footer</section>
   </div>
