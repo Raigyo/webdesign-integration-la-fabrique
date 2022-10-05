@@ -37,7 +37,7 @@ img {
   height: auto;
 }
 
-/* Fonts */
+/* FONTS */
 
 @font-face {
   font-family: "Quando";
@@ -56,6 +56,8 @@ html {
 p {
   font-family: "Quando", "Arial", sans-serif;
   font-size: 1em;
+  line-height: 1.5;
+  padding-bottom: 20px;
 }
 
 h2 {
@@ -95,6 +97,7 @@ h5 {
 }
 
 /* GRID: SECTIONS */
+
 #header {
   grid-area: 1 / 1 / auto / -1;
   background-color: #6c5f5a;
@@ -121,6 +124,7 @@ h5 {
 #news {
   grid-area: 6 / 1 / auto / -1;
   padding: 50px 0 0 0;
+  background-color: #f9edf4;
 }
 
 #about {
@@ -130,19 +134,72 @@ h5 {
 #workshop {
   grid-area: 8 / 1 / auto / -1;
   padding: 50px 0 0 0;
+  background-color: #f9edf4;
 }
 
 #menu {
   grid-area: 9 / 1 / auto / -1;
   padding: 50px 0 0 0;
+  background-color: #f9edf4;
 }
 
 #contact {
   grid-area: 10 / 1 / auto / -1;
+  padding: 50px 0 0 0;
+  background-color: #f9edf4;
 }
 
 #footer {
   grid-area: 11 / 1 / auto / -1;
+  background-color: #6c5f5a;
+}
+
+#copyright {
+  grid-area: 12 / 1 / auto / -1;
+  background-color: #6c5f5a;
+}
+
+/* BTN TOP */
+
+@keyframes bouncing {
+  15% {
+    transform: translateY(5px);
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  65% {
+    transform: translateY(-3px);
+  }
+  80% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.top-link-small {
+  text-align: right;
+  margin-right: 20px;
+  padding-bottom: 25px;
+}
+
+.top-link-small a {
+  text-decoration: none;
+}
+
+.top-link-small img {
+  width: 25px;
+  height: 25px;
+}
+
+.top-link-small img:hover {
+  animation: bouncing 1s ease;
+  animation-iteration-count: infinite;
 }
 
 /* HEADER (Logo+Adress+Social) */
@@ -151,7 +208,7 @@ h5 {
   height: 100px;
   color: #f9edf4;
   display: grid;
-  grid-template-columns: subgrid;
+  /* grid-template-columns: subgrid; */
 }
 
 #header .adress {
@@ -209,7 +266,7 @@ h5 {
 }
 
 #nav .nav-links li {
-  padding: 0 32px;
+  padding: 0 12px;
 }
 
 #nav ul li a {
@@ -236,6 +293,24 @@ h5 {
   margin-right: auto;
   display: block;
   /* position: relative; */
+}
+
+.home {
+  position: absolute;
+  width: 29%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 45px;
+  color: #edebea;
+  background-color: #6c5f5a;
+  padding: 25px;
+}
+
+.home p {
+  color: #edebea;
+  text-align: center;
 }
 
 /* SLIDER */
@@ -329,10 +404,6 @@ h5 {
 
 /* NEWS */
 
-#news {
-  background-color: #f9edf4;
-}
-
 #news h2 {
   color: #6c5f5a;
 }
@@ -402,6 +473,7 @@ h5 {
   padding: 30px 0;
   border-radius: 10px;
   flex: 0 1 calc(32% - 2.5em);
+  text-transform: uppercase;
 }
 
 /* ABOUT */
@@ -468,13 +540,10 @@ h5 {
   padding: 30px;
   border-radius: 10px;
   flex: 0 1 calc(32% - 2.5em);
+  text-transform: uppercase;
 }
 
 /* WORKSHOP */
-
-#workshop {
-  background-color: #f9edf4;
-}
 
 #workshop h2,
 h3,
@@ -492,7 +561,7 @@ p {
 }
 
 #workshop .section-intro {
-  padding: 0 75px 15px 75px;
+  padding: 0 100px 15px 100px;
 }
 
 #workshop .card {
@@ -558,6 +627,7 @@ p {
   padding: 30px;
   border-radius: 10px;
   flex: 0 1 calc(32% - 2.5em);
+  text-transform: uppercase;
 }
 
 .parallax-3 {
@@ -567,10 +637,6 @@ p {
 }
 
 /* MENU */
-
-#menu {
-  background-color: #f9edf4;
-}
 
 #menu h2,
 h3,
@@ -587,7 +653,7 @@ p {
 }
 
 #menu .section-intro {
-  padding: 0 75px 15px 75px;
+  padding: 0 100px 15px 100px;
 }
 
 #menu .card {
@@ -639,4 +705,165 @@ p {
   padding: 30px;
   border-radius: 10px;
   flex: 0 1 calc(32% - 2.5em);
+  text-transform: uppercase;
+}
+
+/* CONTACT */
+
+#contact .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 70px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+#contact .section-intro {
+  padding: 0 100px 15px 100px;
+}
+
+#contact .card {
+  flex: 1 0 21%;
+  position: relative;
+  margin: 0 25px;
+}
+
+#contact h4 {
+  color: #f9edf4;
+  text-align: center;
+  background-color: rgba(108, 95, 90, 0.8);
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 325px;
+}
+
+#contact .card p {
+  text-align: center;
+  font-size: 1.25em;
+}
+
+#contact img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 25px;
+}
+
+#contact label {
+  font-family: "Quando", "Arial", sans-serif;
+  font-size: 1.75em;
+  color: #6c5f5a;
+}
+
+/* Contact: form */
+
+#contact input[type="text"],
+textarea {
+  font-family: "Quando", "Arial", sans-serif;
+  font-size: 1.5em;
+  background-color: rgba(203, 123, 147, 0.8);
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#contact .submit-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#contact input[type="submit"] {
+  background-color: #6c5f5a;
+  color: #edebea;
+  font-family: "Quando", "Arial", sans-serif;
+  font-size: 1.5em;
+  padding: 30px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/* FOOTER */
+
+#footer {
+  color: #f9edf4;
+  height: 100px;
+  display: grid;
+}
+
+/* Footer: nav */
+
+#footer .nav-footer {
+  grid-column: 2 / auto;
+  display: flex;
+  align-items: center;
+  padding-right: 0px;
+}
+
+#footer .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer .nav-footer ul li a {
+  color: #f9edf4;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+#footer .nav-footer ul li a:hover {
+  color: #f485a7;
+}
+
+#footer .nav-links li:first-child {
+  padding-top: 3px;
+  padding-right: 3px;
+}
+
+#footer .nav-links li:not(:first-child):before {
+  content: url("../img/strawberry.png");
+  position: relative;
+  top: 2px;
+}
+
+/* Footer: social */
+
+#footer .social-footer {
+  grid-column: 10 / 12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer .social-footer li {
+  padding: 0 5px;
+}
+
+#footer .social-footer img {
+  width: 35px;
+  height: auto;
+}
+
+/* COPYRIGHT */
+
+#copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#copyright p {
+  color: #edebea;
+  font-size: 0.875em;
 }
