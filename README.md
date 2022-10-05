@@ -57,7 +57,7 @@ _A wireframe is a two-dimensional illustration of a page's interface that specif
 ### Homepage
 
 <p align="center">
-   <img src="_readme-img/figma-homepage.jpg" alt="Capture"/>
+   <img src="_readme-img/figma-homepage.png" alt="Capture"/>
 </p>
 
 ### Sticky menu
