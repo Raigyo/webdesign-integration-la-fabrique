@@ -80,4 +80,5 @@ _A wireframe is a two-dimensional illustration of a page's interface that specif
 
 ## Useful links
 
--[Simple parallax](https://codepen.io/Rueb/pen/rZbZgj)
+- [Simple parallax](https://codepen.io/Rueb/pen/rZbZgj)
+- [How to Create a Sticky Navbar - CSS & JS](https://alvarotrigo.com/blog/sticky-navbar/)

@@ -97,12 +97,12 @@ h5 {
 /* GRID: SECTIONS */
 #header {
   grid-area: 1 / 1 / auto / -1;
-  background-color: #5c4f49;
+  background-color: #6c5f5a;
 }
 
 #nav {
   grid-area: 2 / 1 / auto / -1;
-  background-color: #5c4f49;
+  background-color: #6c5f5a;
 }
 
 #home {
@@ -155,11 +155,11 @@ h5 {
 }
 
 #header .adress {
-  grid-column: 6 / auto;
+  grid-column: 5 / auto;
   display: flex;
   align-items: center;
-  padding-left: 50px;
-  /* justify-content: center; */
+  padding-right: 0px;
+  justify-content: center;
 }
 
 #header .social {
@@ -183,7 +183,7 @@ h5 {
   height: 207px;
   position: absolute;
   top: 0;
-  left: 56pt;
+  left: 72pt;
   z-index: 2;
 }
 
@@ -198,13 +198,18 @@ h5 {
   height: 100px;
   color: #f9edf4;
   display: grid;
-  grid-template-columns: subgrid;
+
+  /* grid-template-columns: subgrid; */
 }
 
 #nav .nav-links {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#nav .nav-links li {
+  padding: 0 32px;
 }
 
 #nav ul li a {
@@ -221,9 +226,16 @@ h5 {
 
 /* HOME */
 
-#home img {
-  width: 100%;
+#home {
   position: relative;
+}
+
+#home img {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /* position: relative; */
 }
 
 /* SLIDER */
@@ -249,8 +261,8 @@ h5 {
 }
 
 .title-slider h2 .back-h2 {
-  background-color: rgba(129, 97, 87, 0.74);
-  padding: 2px;
+  background-color: rgba(108, 95, 90, 0.8);
+  padding: 8px;
 }
 
 .caption {
@@ -279,6 +291,34 @@ h5 {
 
 /* QUOTES */
 
+#quotes {
+  position: relative;
+}
+
+.quotes {
+  z-index: 10;
+  position: absolute;
+  width: fit-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f9edf4;
+  background-color: rgba(108, 95, 90, 0.8);
+  border-radius: 10px;
+}
+
+.quotes p {
+  color: #f9edf4;
+  padding: 15px 15px 0 15px;
+  font-size: 1.5em;
+}
+
+.quotes .quote-name {
+  float: right;
+  padding: 15px 25px 15px 15px;
+  font-size: 1.25em;
+}
+
 .parallax-1 {
   padding: 0;
   height: 320px;
@@ -294,13 +334,13 @@ h5 {
 }
 
 #news h2 {
-  color: #5c4f49;
+  color: #6c5f5a;
 }
 
 #news .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 70px;
 }
 
@@ -338,7 +378,7 @@ h5 {
 
 #news .card p {
   font-size: 1em;
-  text-align: left;
+  text-align: center;
   padding: 10px 20px 25px 20px;
   color: #f9edf4;
 }
@@ -355,12 +395,13 @@ h5 {
 }
 
 #news button {
-  background-color: #5c4f49;
+  background-color: #6c5f5a;
   color: #edebea;
   font-family: "Quando", "Arial", sans-serif;
   font-size: 1.5em;
-  padding: 30px;
+  padding: 30px 0;
   border-radius: 10px;
+  flex: 0 1 calc(32% - 2.5em);
 }
 
 /* ABOUT */
@@ -388,8 +429,8 @@ h5 {
 }
 
 #about .content h2 .back-h2 {
-  background-color: rgba(129, 97, 87, 0.74);
-  padding: 2px;
+  background-color: rgba(108, 95, 90, 0.8);
+  padding: 8px;
 }
 
 #about .content .text {
@@ -420,12 +461,13 @@ h5 {
 }
 
 #about button {
-  background-color: #5c4f49;
+  background-color: #6c5f5a;
   color: #edebea;
   font-family: "Quando", "Arial", sans-serif;
   font-size: 1.5em;
   padding: 30px;
   border-radius: 10px;
+  flex: 0 1 calc(32% - 2.5em);
 }
 
 /* WORKSHOP */
@@ -437,7 +479,7 @@ h5 {
 #workshop h2,
 h3,
 p {
-  color: #5c4f49;
+  color: #6c5f5a;
 }
 
 #workshop .cards {
@@ -456,7 +498,7 @@ p {
 #workshop .card {
   flex: 1 0 21%;
   position: relative;
-  margin: 0 5px;
+  margin: 0 25px;
 }
 
 #workshop h4 {
@@ -471,6 +513,10 @@ p {
   top: 325px;
 }
 
+#workshop .card p {
+  text-align: center;
+}
+
 #workshop img {
   width: 100%;
   height: 382px;
@@ -483,6 +529,20 @@ p {
   background-image: url("../img/parallax-02.jpg");
 }
 
+#workshop .schedule {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#workshop .schedule li {
+  font-family: "Quando", "Arial", sans-serif;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 #workshop .more {
   display: flex;
   justify-content: center;
@@ -491,12 +551,13 @@ p {
 }
 
 #workshop button {
-  background-color: #5c4f49;
+  background-color: #6c5f5a;
   color: #edebea;
   font-family: "Quando", "Arial", sans-serif;
   font-size: 1.5em;
   padding: 30px;
   border-radius: 10px;
+  flex: 0 1 calc(32% - 2.5em);
 }
 
 .parallax-3 {
@@ -514,7 +575,7 @@ p {
 #menu h2,
 h3,
 p {
-  color: #5c4f49;
+  color: #6c5f5a;
 }
 
 #menu .cards {
@@ -532,7 +593,7 @@ p {
 #menu .card {
   flex: 1 0 21%;
   position: relative;
-  margin: 0 5px;
+  margin: 0 25px;
 }
 
 #menu h4 {
@@ -545,6 +606,10 @@ p {
   left: 0;
   right: 0;
   top: 325px;
+}
+
+#menu .card p {
+  text-align: center;
 }
 
 #menu img {
@@ -567,10 +632,11 @@ p {
 }
 
 #menu button {
-  background-color: #5c4f49;
+  background-color: #6c5f5a;
   color: #edebea;
   font-family: "Quando", "Arial", sans-serif;
   font-size: 1.5em;
   padding: 30px;
   border-radius: 10px;
+  flex: 0 1 calc(32% - 2.5em);
 }
