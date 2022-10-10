@@ -1,5 +1,9 @@
 //  https://github.com/piersrueb/simpleparallax
 
+const mediaQuery = window.matchMedia(
+  "(min-width: 320px) and (max-width: 1024px)"
+);
+
 const simpleParallax = (elem, modifier) => {
   let paras = document.getElementsByClassName(elem);
   for (let i = 0; i < paras.length; i++) {
@@ -19,4 +23,28 @@ const simpleParallax = (elem, modifier) => {
   requestAnimationFrame(sp);
 };
 
-simpleParallax("para", 2);
+/* Media queries: parallax disabled on mobile */
+handleTabletChange = (e) => {
+  if (!e.matches) {
+    // console.log("Desktop");
+    simpleParallax("para", 2);
+  }
+};
+
+// Register event listener
+mediaQuery.addListener(handleTabletChange);
+
+// Initial check
+handleTabletChange(mediaQuery);
+
+// If screen size changes during session
+mediaQuery.onchange = (e) => {
+  if (!e.matches) {
+    // console.log("Desktop");
+    simpleParallax("para", 2);
+  } else {
+    // console.log("Mobile");
+    simpleParallax("para", 0);
+    location.reload();
+  }
+};

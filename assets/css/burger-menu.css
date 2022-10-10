@@ -1,8 +1,8 @@
 /* Menu for mobile */
 
 .searchButtonMobile {
-  background-color: #fff;
-  border: #1aa5e1;
+  background-color: #e7a1b6;
+  border: #e7a1b6;
   height: 50px;
   width: 50px;
   position: fixed;
@@ -10,7 +10,7 @@
   right: 152px;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0 16px 48px rgba(26, 165, 225, 1);
+  box-shadow: 0 16px 48px rgb(249, 237, 244);
   text-align: center;
   cursor: pointer;
   z-index: 11000;
@@ -26,32 +26,32 @@
   width: 40px;
   border-radius: 50%;
   position: fixed;
-  top: 36px;
-  right: 85px;
-  background-image: radial-gradient(#35940f, #0166fe);
+  top: 5px;
+  right: 5px;
+  background-image: radial-gradient(#f9edf4, #f9edf4);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 .navigationBtn {
   background-color: #fff;
-
   height: 50px;
   width: 50px;
   position: fixed;
-  top: 36px;
-  right: 85px;
+  top: 5px;
+  right: 5px;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0 16px 48px rgba(26, 165, 225, 1);
+  box-shadow: 0 16px 48px rgb(249, 237, 244);
   text-align: center;
   cursor: pointer;
   z-index: 11000;
 }
 
 .navigationBtn:focus,
-.searchButtonMobile:focus {
-  outline: 2px solid;
+.searchButtonMobile:focus,
+.navigationBtn:hover {
+  outline: #e7a1b6 2px solid;
 }
 
 /* Burger menu */
@@ -61,8 +61,8 @@
   margin-top: 25px;
   width: 32px;
   height: 2px;
-  background: #1aa5e1;
-  border: #1aa5e1;
+  background: #e7a1b6;
+  border: #e7a1b6;
   display: inline-block;
 }
 
@@ -72,7 +72,7 @@
 .navigationIcon::after {
   width: 32px;
   height: 2px;
-  background: #1aa5e1;
+  background: #e7a1b6;
   content: "";
   position: absolute;
   left: 0;
@@ -118,7 +118,7 @@
   margin-top: 18px;
   font-size: 28px;
   font-weight: 300;
-  color: #fff;
+  color: #c77484;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -129,12 +129,20 @@
 
 .social-medias {
   display: flex;
-  justify-content: center;
+
   padding: 25px;
 }
 
 .social-medias li {
   padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 15%;
+}
+
+#nav-mobile .logo {
+  width: 50%;
+  height: auto;
 }
 /* animations */
 

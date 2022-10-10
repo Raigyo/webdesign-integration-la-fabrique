@@ -281,6 +281,10 @@ h5 {
   text-decoration: underline;
 }
 
+#nav-mobile {
+  display: none;
+}
+
 /* HOME */
 
 #home {
@@ -297,12 +301,12 @@ h5 {
 
 .home {
   position: absolute;
-  width: 29%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  bottom: 45px;
+  bottom: 10px;
   color: #edebea;
   background-color: #6c5f5a;
   padding: 25px;
@@ -458,6 +462,11 @@ h5 {
   width: 424px;
 }
 
+#news .card:hover {
+  background-color: #786b66;
+  cursor: pointer;
+}
+
 #news .more {
   display: flex;
   justify-content: center;
@@ -474,6 +483,11 @@ h5 {
   border-radius: 10px;
   flex: 0 1 calc(32% - 2.5em);
   text-transform: uppercase;
+}
+
+#news button:hover {
+  background-color: #786b66;
+  cursor: pointer;
 }
 
 /* ABOUT */
@@ -541,6 +555,11 @@ h5 {
   border-radius: 10px;
   flex: 0 1 calc(32% - 2.5em);
   text-transform: uppercase;
+}
+
+#about button:hover {
+  background-color: #786b66;
+  cursor: pointer;
 }
 
 /* WORKSHOP */
@@ -630,6 +649,11 @@ p {
   text-transform: uppercase;
 }
 
+#workshop button:hover {
+  background-color: #786b66;
+  cursor: pointer;
+}
+
 .parallax-3 {
   padding: 0;
   height: 320px;
@@ -706,6 +730,11 @@ p {
   border-radius: 10px;
   flex: 0 1 calc(32% - 2.5em);
   text-transform: uppercase;
+}
+
+#menu button:hover {
+  background-color: #786b66;
+  cursor: pointer;
 }
 
 /* CONTACT */
@@ -793,6 +822,11 @@ textarea {
   width: 100%;
 }
 
+#contact input[type="submit"]:hover {
+  background-color: #786b66;
+  cursor: pointer;
+}
+
 /* FOOTER */
 
 #footer {
@@ -866,4 +900,129 @@ textarea {
 #copyright p {
   color: #edebea;
   font-size: 0.875em;
+}
+
+/* Media queries */
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  #header,
+  #nav {
+    display: none;
+  }
+  #nav-mobile {
+    display: block;
+  }
+  .wrapper {
+    display: block;
+  }
+
+  .parallax-1,
+  .parallax-2,
+  .parallax-3,
+  .parallax-4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 220px;
+  }
+
+  #quotes {
+    margin-top: 25px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .cards .card {
+    margin-bottom: 25px;
+  }
+  .home {
+    position: relative;
+    width: 100%;
+  }
+
+  .caption {
+    position: absolute;
+    display: block;
+    padding: 10px;
+    top: 60%;
+    width: 30%;
+    text-align: center;
+    color: #786b68;
+    background-color: #f9edf4;
+    border-radius: 10px;
+  }
+
+  .caption.left,
+  .caption.right {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+
+  .quotes {
+    width: 80%;
+  }
+
+  .quotes p {
+    font-size: 1.2em;
+  }
+
+  /* .more {
+    flex-direction: column;
+  } */
+  .more button {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-size: 1.4em;
+  }
+
+  #news .cards {
+    padding: 0 16px;
+  }
+
+  #workshop .cards {
+    padding: 0 16px;
+  }
+
+  #menu .cards {
+    padding: 0 16px;
+  }
+
+  #contact .cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .cards :nth-child(1) {
+    order: 1;
+  }
+  .cards :nth-child(2) {
+    order: 3;
+  }
+  .cards :nth-child(3) {
+    order: 2;
+  }
+
+  #footer .nav-footer {
+    display: none;
+  }
+
+  #footer .social-footer {
+    grid-column: 1/-1;
+  }
+
+  #workshop .schedule {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+    padding-bottom: 25px;
+  }
 }

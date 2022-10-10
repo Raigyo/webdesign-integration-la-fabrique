@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Fabrique</title>
   <link href="assets/css/index.css" rel="stylesheet">
+  <link href="assets/css/burger-menu.css" rel="stylesheet">
   <link href="assets/css/slider.css" rel="stylesheet">
+  <script src="assets/js/burger-menu.js" defer></script>
   <script src="assets/js/slider.js" defer></script>
   <script src="assets/js/parallax.js" defer></script>
 
@@ -15,6 +17,7 @@
 
 <body>
   <div class="wrapper">
+    <!-- HEADER + NAV -->
     <section id="header">
       <h1><img class="logo" src="assets/img/logo-la-fabrique-small.png" alt="La fabrique: Boulangerie - Pâtisserie">
       </h1>
@@ -41,6 +44,51 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+
+    <!-- Nav Mobile -->
+    <nav class="navigation" id="nav-mobile">
+      <input type="checkbox" class="navigationCheckbox" id="navi" aria-label="Main menu" role="button">
+      <label for="navi" id="menu-toggle" class="navigationBtn" tabindex="0">
+        <span class="navigationIcon"></span>
+      </label>
+      <div class="navigationBg"></div>
+      <div class="nav">
+        <ul class="navigationList">
+          <li class="navigationItem">
+            <h1><img class="logo" src="assets/img/logo-la-fabrique-small.png"
+                alt="La fabrique: Boulangerie - Pâtisserie">
+            </h1>
+          </li>
+          <span class="separator"></span>
+          <li class="navigationItem"><a href="#home" class="links" title="Lien vers la section Accueil">Accueil</a>
+          </li>
+          <li class="navigationItem"><a href="#slider" class="links" title="Lien vers la section Nos atouts">Nos
+              atouts</a>
+          </li>
+          <li class="navigationItem"><a href="#news" class="links"
+              title="Lien vers la section Actualités">Actualités</a>
+          </li>
+          <li class="navigationItem"><a href="#about" class="links" title="Lien vers la section À propos">À propos</a>
+          </li>
+          <li class="navigationItem">
+            <a href="#workshop" class="links" title="Lien vers la section L'atelier">L'atelier</a>
+          </li>
+          <li class="navigationItem">
+            <a href="#menu" class="links" title="Lien vers la section Le menu">Le menu</a>
+          </li>
+          <li class="navigationItem">
+            <a href="#contact" class="links" title="Lien vers la section Contact">Contact</a>
+          </li>
+          <ul class="social-medias">
+            <li><a href="#0"><img src="assets/img/social-logo-tik-tok.png" alt="Social media: Tik Tok"></a></li>
+            <li><a href="#0"><img src="assets/img/social-logo-instagram.png" alt="Social media: Instagram"></a></li>
+            <li><a href="#0"><img src="assets/img/social-logo-fb.png" alt="Social media: Facebook"></a></li>
+          </ul>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home -->
     <section id="home">
       <img src="assets/img/logo-la-fabrique-big.png" alt="Accueil">
       <div class="home">
@@ -49,13 +97,13 @@
           45 ans d’expérience !</p>
       </div>
     </section>
-    <section id="slider">
 
+    <!-- Slider -->
+    <section id="slider">
       <div class="carousel-wrapper" js-carousel-wrapper>
         <div class="title-slider">
           <h2><span class="back-h2">Nos atouts</span></h2>
         </div>
-
         <div class="carousel-item" js-carousel-item data-active-slide>
           <a href="#0">
             <img src="assets/img/slide-01.jpg" alt="Slide 1" />
@@ -113,6 +161,8 @@
         <p class="quote-name">Georges Plain</p>
       </div>
     </section>
+
+    <!-- NEWS -->
     <section id="news">
       <h2>Suivez notre actualité</h2>
       <div class="cards">
@@ -174,9 +224,9 @@
           <img src="assets/img/top-of-the-page.png" alt="Icone Retour vers le haut de la page">
         </a>
       </div>
-
-
     </section>
+
+    <!-- ABOUT -->
     <section id="about">
       <article class="content">
 
@@ -220,6 +270,8 @@
       </article>
 
     </section>
+
+    <!-- WORKSHOP -->
     <section id="workshop">
       <h2>Atelier</h2>
       <h3>L’atelier de la Fabrique</h3>
@@ -292,6 +344,7 @@
       <div class="para parallax-3"></div>
     </section>
 
+    <!-- MENU -->
     <section id="menu">
       <h2>Le menu</h2>
       <h3>Nos créations sucrées ou salées</h3>
@@ -366,6 +419,8 @@
         </article>
       </div>
     </section>
+
+    <!-- FOOTER -->
     <section id="footer">
       <nav class="nav-footer">
         <ul class="nav-links">
@@ -387,6 +442,7 @@
       </ul>
     </section>
 
+    <!-- COPYRIGHT -->
     <section id="copyright">
       <p> © La Fabrique - Raigyo Dev</p>
     </section>
