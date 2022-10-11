@@ -396,16 +396,19 @@
         <article class="card">
           <h3>Formulaire de contact</h3>
           <form action="#">
-            <label for="fname">Nom</label>
-            <input type="text" id="fname" name="firstname" placeholder="Votre nom">
+            <label for="fname">Nom<sup>*</sup></label>
+            <input type="text" id="fname" name="firstname" placeholder="Votre nom" required minlength="1"
+              maxlength="20">
 
-            <label for="lname">Prénom</label>
-            <input type="text" id="lname" name="lastname" placeholder="Votre prénom">
+            <label for="lname">Prénom<sup>*</sup></label>
+            <input type="text" id="lname" name="lastname" placeholder="Votre prénom" required minlength="1"
+              maxlength="20">
 
-            <label for="country">Email</label>
-            <input type="text" id="mail" name="email" placeholder="Votre adresse email">
-            <label for="subject">Message</label>
-            <textarea id="subject" name="subject" placeholder="Insérez votre message" style="height:200px"></textarea>
+            <label for="country">Email<sup>*</sup></label>
+            <input type="text" id="mail" name="email" placeholder="Votre adresse email" required>
+            <label for="subject">Message<sup>*</sup></label>
+            <textarea id="subject" name="subject" placeholder="Insérez votre message" required minlength="5"
+              maxlength="280"></textarea>
             <div class="submit-btn">
               <input type="submit" value="Envoyer">
             </div>
