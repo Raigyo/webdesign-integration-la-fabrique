@@ -11,6 +11,7 @@
   <link href="assets/css/slider.css" rel="stylesheet">
   <script src="assets/js/burger-menu.js" defer></script>
   <script src="assets/js/slider.js" defer></script>
+  <script src="assets/js/swipe.js" defer></script>
   <script src="assets/js/parallax.js" defer></script>
 
 </head>
@@ -34,6 +35,7 @@
       </ul>
     </section>
     <nav id="nav">
+
       <ul class="nav-links">
         <li><a href="#home">Accueil</a></li>
         <li><a href="#slider">Nos atouts</a></li>
@@ -52,10 +54,10 @@
         <span class="navigationIcon"></span>
       </label>
       <div class="navigationBg"></div>
-      <div class="nav">
+      <div class="nav-mobile">
         <ul class="navigationList">
           <li class="navigationItem">
-            <h1><img class="logo" src="assets/img/logo-la-fabrique-small.png"
+            <h1><img class="logo" src="assets/img/logo-la-fabrique-mobile.png"
                 alt="La fabrique: Boulangerie - Pâtisserie">
             </h1>
           </li>
@@ -79,11 +81,9 @@
           <li class="navigationItem">
             <a href="#contact" class="links" title="Lien vers la section Contact">Contact</a>
           </li>
-          <ul class="social-medias">
-            <li><a href="#0"><img src="assets/img/social-logo-tik-tok.png" alt="Social media: Tik Tok"></a></li>
-            <li><a href="#0"><img src="assets/img/social-logo-instagram.png" alt="Social media: Instagram"></a></li>
-            <li><a href="#0"><img src="assets/img/social-logo-fb.png" alt="Social media: Facebook"></a></li>
-          </ul>
+          <li class="navigationItem">
+            <a href="#footer" class="links" title="Lien vers la section Social media">Médias sociaux</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -231,8 +231,12 @@
       <article class="content">
 
         <h2><span class="back-h2"> À propos</span></h2>
+        <div><img src="assets/img/about.jpg" alt="">
+          <div class="more">
+            <button>Consultez nos menus !</button>
+          </div>
+        </div>
 
-        <img src="assets/img/about.jpg" alt="">
         <div class="text">
           <p>
             André Georges a de la farine sur les mains depuis bientôt un demi-siècle. En 1974, il reprend la boulangerie
@@ -253,20 +257,15 @@
           </p>
           <p>
             "Le pain que vous mangez, je l’ai élaboré avec passion. Il est le fruit de 45 ans d’expérience. Notre pain
-            est
-            fabriqué
-            et
-            enfourné sur place suivant des méthodes artisanales. Tous les éléments qui le composent sont naturels et
-            traçables
-            jusqu’à leurs origines. Nous sélectionnons et utilisons des ingrédients que nous laissons fermenter de
-            longues
-            heures.
+            est fabriqué et enfourné sur place suivant des méthodes artisanales. Tous les éléments qui le composent sont
+            naturels et
+            traçables jusqu’à leurs origines. Nous sélectionnons et utilisons des ingrédients que nous laissons
+            fermenter de
+            longues heures.
             Cela lui confère un arôme unique que vous ne trouverez qu’au Théâtre du Pain. "
           </p>
         </div>
-        <div class="more">
-          <button>Consultez nos menus !</button>
-        </div>
+
       </article>
 
     </section>
@@ -390,8 +389,8 @@
       <div class="cards">
         <article class="card">
           <h3>Retrouvez-nous !</h3>
-          <p>Rue de l’Aérodrome 18 <br>4140 Dolembreux</p>
-          <img src="assets/img/vroid-smile.png" alt="">
+          <p>Rue de l’Aérodrome 18, 4140 Dolembreux</p>
+          <div><img src="assets/img/baker-girl-01.png" alt=""></div>
         </article>
         <article class="card">
           <h3>Formulaire de contact</h3>
@@ -417,8 +416,8 @@
         </article>
         <article class="card">
           <h3>Appelez-nous !</h3>
-          <p>Tel : <br>04 384 72 77</p>
-          <img src="assets/img/vroid-smile-2.png" alt="">
+          <p>Tel : 04 384 72 77</p>
+          <div><img src="assets/img/baker-girl-02.png" alt=""></div>
         </article>
       </div>
     </section>

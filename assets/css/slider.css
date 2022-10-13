@@ -120,6 +120,19 @@
   background-color: #cb7b93;
 }
 
+@media (min-width: 320px) and (max-width: 1024px) {
+  .carousel-wrapper .carousel-arrow {
+    display: none;
+  }
+  .carousel-wrapper .carousel-item img {
+    min-width: 600px;
+    padding-top: 257px;
+    /* object-fit: contain; */
+    /* object-position: center; */
+    background-color: #6c5f5a;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   .page-wrapper {
     gap: 1rem;

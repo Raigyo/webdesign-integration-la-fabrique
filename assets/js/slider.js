@@ -42,7 +42,7 @@ function disableArrows(slides, nextBtn, prevBtn) {
 // helper function to hide or show slides
 function showslides(carouselWrapper, dots) {
   const slides = carouselWrapper.querySelectorAll("[js-carousel-item]");
-  console.log("slides", slideIndex);
+  // console.log("slides", slideIndex);
 
   // Below commented code need to added only if we no need to disabled arrow once they reached to end
   // if (slideIndex > slides.length - 1) slideIndex = 0;
