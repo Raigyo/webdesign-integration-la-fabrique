@@ -108,6 +108,7 @@
 
 .carousel-dots .dots {
   background-color: rgba(0, 0, 0, 0.4);
+  margin: 0 15px;
   padding: 10px;
   border: 1px solid #fff;
   background-color: #f9edf4;
@@ -125,7 +126,7 @@
     display: none;
   }
   .carousel-wrapper .carousel-item img {
-    min-width: 600px;
+    min-width: 320px;
     padding-top: 257px;
     /* object-fit: contain; */
     /* object-position: center; */
