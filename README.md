@@ -6,7 +6,11 @@ _August - September 2022_
 
 ---
 
-WIP
+The website is responsive and slider/swiper, sticky menu and burger menu are working.
+
+Result can be seen here on the [Github Page](https://raigyo.github.io/webdesign-integration-la-fabrique/)
+
+-
 
 ## Moodboard
 
@@ -48,11 +52,15 @@ _A mood board is a collage or composition of images, visuals and other objects, 
 
 _A wireframe is a two-dimensional illustration of a page's interface that specifically focuses on space allocation and prioritization of content, functionalities available, and intended behaviors._
 
+Figma file (.fig): [Download](\_sources/Wireframe boulangerie.fig)
+
 <p align="center">
    <img src="_readme-img/wireframes-la-fabrique.png" alt="Capture"/>
 </p>
 
 ## Figma project
+
+Figma file (.fig): [Download](\_sources/La Fabrique.fig)
 
 ### Homepage
 
@@ -77,6 +85,24 @@ _A wireframe is a two-dimensional illustration of a page's interface that specif
 ### Charter for front-end developer
 
 ![Capture](_readme-img/figma-styles.png)
+
+## Integration
+
+### Integration process (Grid displayed using dev tools)
+
+![Capture](_readme-img/01-final-grid.png)
+
+### Final result desktop
+
+![Capture](_readme-img/02-final-desktop.png)
+
+![Capture](_readme-img/03-final-sticky.png)
+
+### Final result mobile
+
+<p align="center">
+   <img src="_readme-img/04-final-mobile.png" alt="Capture"/>
+</p>
 
 ## Useful links
 

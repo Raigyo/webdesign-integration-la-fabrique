@@ -165,7 +165,23 @@ h5 {
 
 /* BTN TOP */
 
-@keyframes bouncing {
+.top-link-small {
+  text-align: right !important;
+  margin-right: 20px !important;
+  padding-bottom: 25px !important;
+}
+
+.top-link-small a {
+  text-decoration: none !important;
+}
+
+.top-link-small img {
+  width: 25px !important;
+  height: 25px !important;
+  z-index: 999 !important;
+}
+
+@-webkit-keyframes bounceTop {
   15% {
     transform: translateY(5px);
   }
@@ -186,24 +202,54 @@ h5 {
   }
 }
 
-.top-link-small {
-  text-align: right !important;
-  margin-right: 20px !important;
-  padding-bottom: 25px !important;
+@-moz-keyframes bounceTop {
+  15% {
+    transform: translateY(5px);
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  65% {
+    transform: translateY(-3px);
+  }
+  80% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-.top-link-small a {
-  text-decoration: none !important;
-}
-
-.top-link-small img {
-  width: 25px !important;
-  height: 25px !important;
-  z-index: 999 !important;
+@keyframes bounceTop {
+  15% {
+    transform: translateY(5px);
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  65% {
+    transform: translateY(-3px);
+  }
+  80% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .top-link-small img:hover {
-  animation: bouncing 1s ease;
+  -webkit-animation: bounceTop 1s ease;
+  -moz-animation: bounceTop 1s ease;
+  animation: bounceTop 1s ease;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
@@ -281,6 +327,28 @@ h5 {
   height: auto;
 }
 
+@-webkit-keyframes bounceSocial {
+  to {
+    -webkit-transform: scale(1.2);
+  }
+}
+@-moz-keyframes bounceSocial {
+  to {
+    -moz-transform: scale(1.2);
+  }
+}
+@keyframes bounceSocial {
+  to {
+    transform: scale(1.2);
+  }
+}
+
+#header .social img:hover {
+  -webkit-animation: bounceSocial 0.3s infinite alternate;
+  -moz-animation: bounceSocial 0.3s infinite alternate;
+  animation: bounceSocial 0.3s infinite alternate;
+}
+
 /* NAVIGATION */
 
 #nav {
@@ -296,7 +364,6 @@ h5 {
   display: flex;
   position: sticky;
   top: 0;
-
   justify-content: center !important;
   transition: 0.5s ease-in-out;
 }
@@ -321,6 +388,10 @@ h5 {
 #nav ul li a:hover {
   color: #f485a7;
   /* text-decoration: underline; */
+}
+
+#nav ul li a.active-nav {
+  color: #f485a7;
 }
 
 #nav-mobile {
@@ -888,6 +959,12 @@ textarea::placeholder {
   height: auto;
 }
 
+#footer .social-footer img:hover {
+  -webkit-animation: bounceSocial 0.3s infinite alternate;
+  -moz-animation: bounceSocial 0.3s infinite alternate;
+  animation: bounceSocial 0.3s infinite alternate;
+}
+
 /* COPYRIGHT */
 
 #copyright {
@@ -912,6 +989,9 @@ textarea::placeholder {
 
   .wrapper {
     display: block;
+  }
+  section {
+    scroll-margin-top: 0px;
   }
 
   .cards {
@@ -1089,6 +1169,25 @@ textarea::placeholder {
     overflow: auto;
   }
 
+  #about .content .text {
+    scrollbar-width: thin;
+    scrollbar-color: #f9edf4 #6c5f5a;
+  }
+
+  #about .content .text::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  #about .content .text::-webkit-scrollbar-track {
+    background: #f9edf4;
+  }
+
+  #about .content .text::-webkit-scrollbar-thumb {
+    background-color: #6c5f5a;
+    border-radius: 20px;
+    border: 3px solid #f9edf4;
+  }
+
   /* WORKOUT */
 
   #workshop .cards {
@@ -1185,11 +1284,13 @@ textarea::placeholder {
   #contact .card {
     flex-basis: 50%;
     position: relative;
-    margin: 0 25px;
+    margin: 25px 25px;
   }
 
   #contact .card img {
     width: 30%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #contact .cards :nth-child(1) {

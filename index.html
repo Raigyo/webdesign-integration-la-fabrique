@@ -5,10 +5,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
   <title>La Fabrique</title>
+  <meta name="description" content="Brandign, Design & Integration: La Fabrique - Boulangerie et Pâtisserie">
+  <meta name="author" content="Vincent Chilot">
+  <meta name="keywords"
+    content="raigyo-dev.be, raigyo-dev, raigyo, vincent chilot, frontend, developer, développeur, web design, integration, sirius school">
+  <!-- Open graph -->
+  <meta property="og:url" content="https://raigyo.github.io/webdesign-integration-la-fabrique/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Raigyo-dev: My portfolio">
+  <meta property="og:description" content="My portfolio as Front End Developer!">
+  <meta property="og:image" content="assets/img/favicons/logo-opengraph-image.png">
+  <!-- Icons  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Styles -->
   <link href="assets/css/index.css" rel="stylesheet">
   <link href="assets/css/burger-menu.css" rel="stylesheet">
   <link href="assets/css/slider.css" rel="stylesheet">
+  <!-- Scripts -->
   <script src="assets/js/burger-menu.js" defer></script>
   <script src="assets/js/sticky-menu.js" defer></script>
   <script src="assets/js/slider.js" defer></script>
@@ -38,7 +60,7 @@
     <nav id="nav">
 
       <ul class="nav-links">
-        <li><a href="#home">Accueil</a></li>
+        <li><a href="#home" class="active-nav">Accueil</a></li>
         <li><a href="#slider">Nos atouts</a></li>
         <li><a href="#news">Actualités</a></li>
         <li><a href="#about">À propos</a></li>
@@ -91,11 +113,11 @@
 
     <!-- Home -->
     <section id="home">
-      <img src="assets/img/logo-la-fabrique-big.png" alt="Accueil">
+      <img src="assets/img/logo-la-fabrique-big.png" alt="Accueil - Logo du site avec un dessin de deux boulangères">
       <div class="home">
         <h2>De la passion et du travail</h2>
         <p>Le pain que vous mangez, André Georges l'a élaboré avec passion. C'est le fruit de
-          45 ans d’expérience !</p>
+          45 ans d’expérience&nbsp;!</p>
       </div>
     </section>
 
@@ -108,7 +130,7 @@
         <div class="carousel-item" js-carousel-item data-active-slide>
           <a href="#0">
             <div class="slider-image">
-              <img src="assets/img/slide-01.jpg" alt="Slide 1" />
+              <img src="assets/img/slide-01.jpg" alt="Slide 1: plan de travail  ©pexels/lucie-liz" />
             </div>
             <div class="caption left">
               <h2>Farine premium</h2>
@@ -119,7 +141,7 @@
         <div class="carousel-item" js-carousel-item>
           <a href="#0">
             <div class="slider-image">
-              <img src="assets/img/slide-02.jpg" alt="Slide 2" />
+              <img src="assets/img/slide-02.jpg" alt="Slide 2: pétrissage de pâte ©pexels/klaus-nielsen" />
             </div>
             <div class="caption right">
               <h2>Savoir-faire</h2>
@@ -131,7 +153,7 @@
         <div class="carousel-item" js-carousel-item>
           <a href="#0">
             <div class="slider-image">
-              <img src="assets/img/slide-03.jpg" alt="Slide 3" />
+              <img src="assets/img/slide-03.jpg" alt="Slide 3: service du pain ©pexels/pexels-expect-best" />
             </div>
             <div class="caption left">
               <h2>Circuit-court</h2>
@@ -143,7 +165,7 @@
         <div class="carousel-item" js-carousel-item>
           <a href="#0">
             <div class="slider-image">
-              <img src="assets/img/slide-04.jpg" alt="Slide 4" />
+              <img src="assets/img/slide-04.jpg" alt="Slide 4: préparation méticuleuse du pain ©pexels/klaus-nielsen" />
             </div>
             <div class="caption right">
               <h2>Tradition</h2>
@@ -183,9 +205,10 @@
                 <p class="date">12 juillet 2022</p>
               </div>
               <picture class="thumbnail">
-                <img src="assets/img/news-01.jpg" alt="Recette de la Tarte au riz">
+                <img src="assets/img/news-01.jpg" alt="Recette de la Tarte au riz ©pexels/anastasia-shuraeva">
               </picture>
-              <p>Boulangez ! Le patron vous livre ses secrets de fabrication. Recette N.1 : comment faire un bon pain
+              <p>Boulangez&nbsp;! Le patron vous livre ses secrets de fabrication. Recette N.1 : comment faire un bon
+                pain
                 ordinaire...</p>
             </div><!-- .card-content -->
           </a>
@@ -199,7 +222,7 @@
                 <p class="date">18 septembre 2022</p>
               </div>
               <picture class="thumbnail">
-                <img src="assets/img/news-02.jpg" alt="Le jardin du mont pointu">
+                <img src="assets/img/news-02.jpg" alt="Champ de tournesols ©pexels/pixabay">
               </picture>
               <p>Portrait de producteurs locaux : Le Théâtre du Pain présente Le Jardin du Mont Pointu à Louveigné-
                 Sprimont, le paradis de Marie....</p>
@@ -215,9 +238,10 @@
                 <p class="date">18 octobre 2022</p>
               </div>
               <picture class="thumbnail">
-                <img src="assets/img/news-03.jpg" alt="Le pain maison">
+                <img src="assets/img/news-03.jpg" alt="Le pain maison ©unsplash/nadya-spetnitskaya">
               </picture>
-              <p>Boulangez ! Le patron vous livre ses secrets de fabrication. Recette N.1 : comment faire un bon pain
+              <p>Boulangez&nbsp;! Le patron vous livre ses secrets de fabrication. Recette N.1 : comment faire un bon
+                pain
                 ordinaire....</p>
             </div><!-- .card-content -->
           </a>
@@ -226,7 +250,7 @@
       </div>
 
       <div class="more">
-        <button>Plus d'actualités !</button>
+        <button>Plus d'actualités&nbsp;!</button>
       </div>
       <div class="top-link-small">
         <a href="#top-page" title="Retour vers le haut de la page">
@@ -240,9 +264,9 @@
       <article class="content">
 
         <h2><span class="back-h2"> À propos</span></h2>
-        <div><img src="assets/img/about.jpg" alt="">
+        <div><img src="assets/img/about.jpg" alt="Préparation de pâtisseries ©pexels/lucie-liz">
           <div class="more">
-            <button>Consultez nos menus !</button>
+            <button>Consultez nos menus&nbsp;!</button>
           </div>
         </div>
 
@@ -255,14 +279,14 @@
             qu’il fait
             la
             connaissance du fondateur de la chaîne « Chaud » avec un concept simple mais efficace : la cuisson sur place
-            !
+            &nbsp;!
             André
             Georges l’aide à la développer en France. Dans les années 90, son nom s’inscrit en grand sur une
             cinquantaine
             de points
             de vente de la région Parisienne Aujourd’hui, à l’approche de la septantaine, André Georges décide de se
             relancer dans
-            la production artisanale de produits de qualité avec La Fabrique. Du pain artisanal et original !
+            la production artisanale de produits de qualité avec La Fabrique. Du pain artisanal et original&nbsp;!
           </p>
           <p>
             "Le pain que vous mangez, je l’ai élaboré avec passion. Il est le fruit de 45 ans d’expérience. Notre pain
@@ -297,22 +321,22 @@
       </div>
       <div class="cards">
         <article class="card part1">
-          <img src="assets/img/workshop-01.jpg" alt="">
+          <img src="assets/img/workshop-01.jpg" alt="Pain à l'ancienne ©pexels/pexels-marianna-ole">
           <h4>Boulangerie</h4>
           <p>L'Atelier de la fabrique propose un large assortiment de pains, baguettes, miches, etc.</p>
         </article>
         <article class="card part1">
-          <img src="assets/img/workshop-02.jpg" alt="">
+          <img src="assets/img/workshop-02.jpg" alt="Pâtisseries roses ©pexels/pexels-karley-saagi">
           <h4>Pâtisserie</h4>
           <p>L'Atelier propose aussi une large gamme de pâtisseries, tartes, gaufres, gosettes, viennoiseries, etc.</p>
         </article>
         <article class="card part1">
-          <img src="assets/img/workshop-03.jpg" alt="">
+          <img src="assets/img/workshop-03.jpg" alt="Sandwiches maison ©pexels/pexels-rajesh-tp">
           <h4>Sandwicherie</h4>
           <p>A la carte également : des formules petits-déjeuners, des sandwichs, des quiches, des salades, etc.</p>
         </article>
         <article class="card part1">
-          <img src="assets/img/workshop-04.jpg" alt="">
+          <img src="assets/img/workshop-04.jpg" alt="Panier d'épicerie fine ©pexels/pexels-rodnae-productions">
           <h4>Épicerie fine</h4>
           <p>L'Atelier de la Fabrique, c'est aussi une épicerie fine : huiles, vinaigres, mézés, confitures, thés, etc.
           </p>
@@ -322,7 +346,7 @@
       <div class="cards">
         <article class="card">
           <h3>Anniversaires</h3>
-          <img src="assets/img/workshop-05.jpg" alt="">
+          <img src="assets/img/workshop-05.jpg" alt="Gâteau d'anniversaire ©pexels/towfiqu-barbhuiya">
           <p>L'Atelier de la fabrique propose un large assortiment de pains, baguettes, miches, etc.</p>
         </article>
         <article class="card">
@@ -340,14 +364,14 @@
         </article>
         <article class="card">
           <h3>Événements</h3>
-          <img src="assets/img/workshop-06.jpg" alt="">
+          <img src="assets/img/workshop-06.jpg" alt="Pièce montée de marriage ©pexels/vidal-balielo-jr">
           <p>Vous recherchez un traiteur pour assurer votre événement, que ce soit pour une réception privée ou pour une
             réception d’entreprise? L’Atelier de La fabrique vous propose ses paniers surprises!
             Large choix de garnitures inspiré de nos sandwichs.</p>
         </article>
       </div>
       <div class="more">
-        <button>Contactez-nous !</button>
+        <button>Contactez-nous&nbsp;!</button>
       </div>
       <div class="top-link-small">
         <a href="#top-page" title="Retour vers le haut de la page">
@@ -369,32 +393,31 @@
       </div>
       <div class="cards">
         <article class="card">
-          <img src="assets/img/menu-01.jpg" alt="">
+          <img src="assets/img/menu-01.jpg" alt="Panier de pain traditionnel ©pexels/markus-spiske">
           <h4>Nos pains</h4>
           <p>Dans notre rayon pains, vous trouverez à la fois les pains blancs classiques, multi-céréales, à l’ancienne,
             au grain
-            mais aussi baguettes, pistolets, ciabatta... Nous prenons aussi vos commandes pour vos événements !</p>
+            mais aussi baguettes, pistolets, ciabatta... Nous prenons aussi vos commandes pour vos événements&nbsp;!</p>
         </article>
         <article class="card">
-          <img src="assets/img/menu-02.jpg" alt="">
+          <img src="assets/img/menu-02.jpg" alt="Viennoiseries diverses ©pexels/erick-mufasa">
           <h4>Viennoiseries</h4>
           <p>Nous sommes fiers de vous écrire ceci : toutes nos viennoiseries sont réalisées maison, de la pâte à la
             cuisson. Nous utilisons du beurre pour notre pâte feuilletée et du bon chocolat. C’est un gage de qualité,
             de moelleux, de
-            croustillant, de goût.. Bref, ça se goûte ! Pains au chocolat, pains au chocolat nappés, croissants,
+            croustillant, de goût.. Bref, ça se goûte&nbsp;! Pains au chocolat, pains au chocolat nappés, croissants,
             couques, suisse raisin, huit à la
             crème…</p>
         </article>
         <article class="card">
-          <img src="assets/img/menu-03.jpg" alt="">
+          <img src="assets/img/menu-03.jpg" alt="Brioches sous cloche ©pexels/maria-orlova">
           <h4>Craquelins & Brioches</h4>
           <p>Voilà l’ami du petit déjeuner ou… de tout instant gourmand de la journée. Sa douceur vous emballera.
-            Craquelin,
-            cramique, brioche... Mmmhh il vous régalera !</p>
+            Craquelin, cramique, brioche... Mmmhh il vous régalera&nbsp;!</p>
         </article>
       </div>
       <div class="more">
-        <button>Notre atelier !</button>
+        <button>Notre atelier&nbsp;!</button>
       </div>
       <div class="top-link-small">
         <a href="#top-page" title="Retour vers le haut de la page">
@@ -413,7 +436,7 @@
             <h3>Retrouvez-nous&nbsp;!</h3>
             <p>Rue de l’Aérodrome 18, 4140 Dolembreux</p>
           </div>
-          <div><img src="assets/img/baker-girl-01.png" alt=""></div>
+          <div><img src="assets/img/baker-girl-01.png" alt="Personnage féminin type manga"></div>
         </article>
         <article class="card">
           <h3>Formulaire de contact</h3>
@@ -443,7 +466,7 @@
             <h3>Appelez-nous&nbsp;!</h3>
             <p>Tel : 04 384 72 77</p>
           </div>
-          <div><img src="assets/img/baker-girl-02.png" alt=""></div>
+          <div><img src="assets/img/baker-girl-02.png" alt="Personnage féminin type manga"></div>
         </article>
 
       </div>

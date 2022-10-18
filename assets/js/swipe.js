@@ -1,7 +1,7 @@
 const gesuredZone = document.querySelector(".carousel-wrapper");
 const carouselItems = document.querySelectorAll(".carousel-item").length;
-gesuredZone.addEventListener("touchstart", startTouch, false);
-gesuredZone.addEventListener("touchmove", moveTouch, false);
+gesuredZone.addEventListener("touchstart", startTouch, { passive: false });
+gesuredZone.addEventListener("touchmove", moveTouch, { passive: false });
 
 // slide count
 
@@ -12,11 +12,13 @@ let initialX = null;
 let initialY = null;
 
 function startTouch(e) {
+  e.preventDefault();
   initialX = e.touches[0].clientX;
   initialY = e.touches[0].clientY;
 }
 
 function moveTouch(e) {
+  e.preventDefault();
   if (initialX === null) {
     return;
   }
