@@ -1,6 +1,6 @@
 # Brandign, Design & Integration: La Fabrique - Boulangerie et Pâtisserie
 
-_August - September 2022_
+_August - October 2022_
 
 > 🔨 Branding, Design and integration of a fictional bakery and pastry. The design has been made using Figma and Adobe Illustrator during my Web-design training at Sirius School. I also used the 3D software [VROID](https://vroid.com/en) and Adobe Photoshop for some artworks. Integration uses HTML, CSS3 and JS (no framework).
 
