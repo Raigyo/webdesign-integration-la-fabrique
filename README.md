@@ -10,8 +10,6 @@ The website is responsive and slider/swiper, sticky menu and burger menu are wor
 
 Result can be seen here on the [Github Page](https://raigyo.github.io/webdesign-integration-la-fabrique/)
 
--
-
 ## Moodboard
 
 _A mood board is a collage or composition of images, visuals and other objects, often created for the purposes of design or presentation. Mood boards can help designers to figure out how to create unified styles or themes for a design project._
