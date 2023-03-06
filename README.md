@@ -101,7 +101,7 @@ Figma file (.fig): [Download](https://github.com/Raigyo/webdesign-integration-la
 <p align="center">
    <img src="_readme-img/04-final-mobile.png" alt="Capture"/>
 </p>
-
+ 
 ## Useful links
 
 - [Simple parallax](https://codepen.io/Rueb/pen/rZbZgj)
