@@ -892,6 +892,12 @@ textarea::placeholder {
   cursor: pointer;
 }
 
+#contact .top-link-small {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
 /* FOOTER */
 
 #footer {
@@ -1014,6 +1020,10 @@ textarea::placeholder {
   /* Btn top => removed */
 
   .top-link-small {
+    display: none;
+  }
+
+  #contact .top-link-small {
     display: none;
   }
 
