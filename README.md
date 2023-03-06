@@ -50,7 +50,7 @@ _A mood board is a collage or composition of images, visuals and other objects, 
 
 _A wireframe is a two-dimensional illustration of a page's interface that specifically focuses on space allocation and prioritization of content, functionalities available, and intended behaviors._
 
-Figma file (.fig): [Download](_sources/Wireframe boulangerie.fig)
+Figma file (.fig): [Download](https://github.com/Raigyo/webdesign-integration-la-fabrique/blob/main/_sources/La%20Fabrique.fig)
 
 <p align="center">
    <img src="_readme-img/wireframes-la-fabrique.png" alt="Capture"/>
